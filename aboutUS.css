@@ -1,0 +1,106 @@
+/* General Page Styling */
+body {
+    font-family: 'Courier', monospace; /* Typewriter-style font */
+    background-color: #e1d3c5; /* Light vintage paper color */
+    margin: 0;
+    padding: 0;
+    color: #3c2e1f; /* Dark vintage text color */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #c3a374; /* Vintage gold */
+    color: #3c2e1f; /* Dark vintage text color */
+    border-bottom: 3px solid #847a3c; /* Darker vintage border */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* About Us Page Styling */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-box,
+.right-box {
+    flex: 1;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.left-box {
+    background-color: #775521; /* Dark brown */
+    color: #dcba82; /* Light vintage gold */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-box img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.left-box ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.left-box li {
+    margin-bottom: 10px;
+}
+
+.right-box {
+    background-color: #9c6439; /* Rich brown */
+    color: #dcba82; /* Light vintage gold */
+    padding: 20px;
+    position: relative;
+}
+
+.right-box h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+/* Typewriter Effect Styling */
+.typewriter {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #847a3c; /* Darker vintage border */
+    background-color: #775521; /* Dark brown */
+    color: #dcba82; /* Light vintage gold */
+    border-radius: 5px;
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+
+.typewriter p {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #dcba82; /* Cursor color */
+    animation: typing 10s steps(60, end) infinite, blinking 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blinking {
+    50% { border-color: transparent; }
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1f26; /* Darkish tone */
+    color: #e0e0e0;
+}
+
+header {
+    height: 150px;
+    background: linear-gradient(to right, #2a3f54 50%, #d0e7f9 50%); /* Half Van Deusen Blue, half light blue */
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    border: 3px solid #2a3f54; /* Van Deusen Blue border */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    width: 94px; /* Adjust image size to fit the circle */
+    height: 94px;
+    border-radius: 50%; /* Ensures the image is round */
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #36454f; /* Charcoal Blue */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.info-box {
+    background-color: #d0e7f9; /* Light bluish box */
+    margin: 20px auto;
+    width: 80%;
+    height: 300px; /* Increased height */
+    border-radius: 10px;
+    padding: 20px; /* Added padding for better content spacing */
+    color: #1c1f26; /* Dark text color for better readability */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
+
+.info-box {
+    background-color: #d0e7f9; /* Light bluish box */
+    margin: 20px auto;
+    width: 80%;
+    height: 400px; /* Increased height */
+    border-radius: 10px;
+    padding: 20px; /* Added padding for better content spacing */
+    color: #1c1f26; /* Dark text color for better readability */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+}
+
+.photo-slider {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    min-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 2px solid #1c1f26; /* Optional: Add a separator between slides */
+}
+
+.slide img {
+    max-height: 200px; /* Adjust the height as needed */
+    width: auto;
+    border-radius: 10px;
+}
+
+
+
+/* Optional: Add styles for scroll bar appearance */
+.photo-slider::-webkit-scrollbar {
+    display: none;
+}

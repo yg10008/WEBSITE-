@@ -1,0 +1,53 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: #003366; /* Navy blue */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004080; /* Darker navy blue */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #b0c4de; /* Light bluish shade */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366; /* Navy blue */
+    color: white;
+}
+
+td {
+    background-color: #002b54; /* Darker bluish shade */
+    color: white;
+}
+
+footer {
+    background-color: #004080; /* Darker navy blue */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
